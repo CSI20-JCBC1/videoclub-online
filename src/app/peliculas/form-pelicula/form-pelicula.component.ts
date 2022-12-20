@@ -53,7 +53,7 @@ export class FormPeliculaComponent implements OnInit {
   guardar(){
     if(this.nueva){
       // guardar datos con crearMascota
-      this.fire.create('peliculas', this.documentId).then(
+      this.fire.create('peliculas', this.formPelicula.value).then(
         () => {
           
           this.cancel();
