@@ -1,0 +1,8 @@
+<h2>Listado peliculas</h2>
+
+<ul >
+    <li *ngFor="let pelicula of peliculas" routerLink="edit/{{pelicula.documentId}}">
+        Id: {{pelicula.documentId}} Nombre: {{pelicula.data.titulo}} Duracion: {{pelicula.data.duracion}}
+    </li>
+    <button routerLink="edit/nuevaPelicula">Crear Pelicula</button>
+</ul>

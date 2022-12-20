@@ -1,0 +1,35 @@
+<form [formGroup]="formPelicula" class="form-group container w-50 mt-3">
+  <div>
+    <input type="text" formControlName="titulo" id="titulo" class="formControl" /><label for="titulo">Titulo</label>
+</div>
+
+  <div>
+    <input type="text" formControlName="director" id="director" class="formControl"/><label for="director">Director</label>
+  </div>
+
+  <div>
+    <input type="text" formControlName="duracion" id="duracion" class="formControl" /><label for="duracion">Duracion</label>
+  </div>
+
+  <div>
+    <input type="text" formControlName="publico" id="publico" class="formControl" /><label for="publico">Publico</label>
+  </div>
+
+  <div>
+    <input type="text" formControlName="genero" id="genero" class="formControl" /><label for="genero">Genero</label>
+  </div>
+
+  <div>
+    <input type="text" formControlName="year" id="year" class="formControl" /><label for="year">Año</label>
+  </div>
+
+  <button
+  class="btn btn-primary m-2"
+  (click)="guardar()"
+  [disabled]="!formPelicula.valid"
+>
+  Guardar
+</button>
+
+<button class="btn btn-danger m-2" (click)="cancel()">Volver</button>
+</form>
