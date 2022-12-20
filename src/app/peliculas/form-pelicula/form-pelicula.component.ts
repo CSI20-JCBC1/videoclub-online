@@ -74,6 +74,10 @@ export class FormPeliculaComponent implements OnInit {
     }
   }
 
+  borrar(){
+    this.fire.delete('peliculas', this.documentId);
+  }
+
   cancel(){
     this.location.back();
   }
