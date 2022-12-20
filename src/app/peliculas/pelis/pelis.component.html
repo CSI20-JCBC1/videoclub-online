@@ -2,7 +2,7 @@
 
 <ul >
     <li *ngFor="let pelicula of peliculas" routerLink="edit/{{pelicula.documentId}}">
-        Id: {{pelicula.documentId}} Nombre: {{pelicula.data.titulo}} Duracion: {{pelicula.data.duracion}}
+        Pelicula: {{pelicula.data.titulo}} ==> Duracion: {{pelicula.data.duracion}} // Director: {{pelicula.data.director}}
     </li>
-    <button routerLink="edit/nuevaPelicula">Crear Pelicula</button>
+    <button routerLink="edit/nuevaPelicula" class="btn btn-dark">Crear Pelicula</button>
 </ul>
